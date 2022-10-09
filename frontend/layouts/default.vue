@@ -1,11 +1,9 @@
 <template>
   <div class="drawer" data-theme="night">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col ">
-
-
+    <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <nav class="w-full navbar bg-base-300">
+      <div class="w-full navbar bg-base-300">
         <div class="flex-none lg:hidden">
           <label for="my-drawer-3" class="btn btn-square btn-ghost">
             <svg
@@ -23,28 +21,23 @@
             </svg>
           </label>
         </div>
-        <div class="flex-1 px-2 mx-2 text-xl">Blog</div>
-        <nav class="flex-none hidden lg:block">
+        <div class="flex-1 px-2 mx-2">Navbar Title</div>
+        <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
-            <li class="rounded-xl"><a>Portfolio</a></li>
-            <li class="rounded-xl"><a>IDK</a></li>
+            <li><a>Navbar Item 1</a></li>
+            <li><a>Navbar Item 2</a></li>
           </ul>
-        </nav>
-      </nav>
+        </div>
+      </div>
       <!-- Page content here -->
 
-      <main class="max-w-screen h-auto">
-        <slot />
-      </main>
-
-      <footer class="footer footer-center p-4 bg-base-300 text-base-content mt-auto">
+      <Nuxt />
+      <footer class="footer mt-auto footer-center p-4 bg-base-300 text-base-content">
         <div>
-          <p>Made by: <a class="font-bold hover:scale-110" href="https://www.saetom.xyz">Matiss Jurevics</a> (2022)</p>
+          <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
         </div>
       </footer>
-
-
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay"></label>
