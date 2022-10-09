@@ -21,12 +21,12 @@
             </svg>
           </label>
         </div>
-        <div class="flex-1 px-2 mx-2">Navbar Title</div>
+        <div class="flex-1 px-2 mx-2 text-xl font-bold">Saetom Blog</div>
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
-            <li><a>Navbar Item 1</a></li>
-            <li><a>Navbar Item 2</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Contact Me</a></li>
           </ul>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <Nuxt />
       <footer class="footer mt-auto footer-center p-4 bg-base-300 text-base-content">
         <div>
-          <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+          <p>Made by: Matiss Jurevics</p>
         </div>
       </footer>
     </div>
