@@ -1,7 +1,7 @@
 <template>
-  <main data-theme="night">
-    <div>
-      <h1 class="btn btn-primary">Hello World!</h1>
-    </div>
-  </main>
+  <!-- Hero section with newest post -->
+  <div class="bg-white w-full h-max">
+    
+  </div>
+  <!-- Blog posts -->
 </template>
