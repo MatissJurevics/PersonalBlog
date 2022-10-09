@@ -1,6 +1,9 @@
 <script setup>
 import { computed, ref } from "vue";
+import PostCard from "../components/PostCard.vue";
 const posts = ref(["Title1", "Title2", "Title3", "Title4", "Title5", "Title6"]);
+// Token 1a3e2b3b2a638dd5ffc748d271c02c3a8b2a1cc6a5f225227d027fdbef7c3547aa6e8b3760e9ebd47d9173f09493cb78412145436125085ed1968637c72b2a6a21fecbafab5df5e34f01390235a457402aceae52531c9cb9f193f3fe4d6c706d2df454063d6c8ddd95077912c8b5764b3e46c38bdc770aea88850883538cf47a
+
 </script>
 
 <template>
@@ -34,23 +37,10 @@ const posts = ref(["Title1", "Title2", "Title3", "Title4", "Title5", "Title6"]);
 
     <section class="w-full px-32 py-16">
       <h1 class="text-content text-3xl font-semibold">Blog Posts</h1>
-      <ul class="flex flex-col xl:flex-row flex-wrap">
-        <div v-for="post in posts" class="card w-96 bg-base-100 shadow-xl mr-8 my-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              {{post}}
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
+      <ul class="flex flex-col xl:flex-row  flex-wrap">
+        <PostCard v-for="post in posts" :title="post"/>
+
+       
       </ul>
     </section>
   </main>

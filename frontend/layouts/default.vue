@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer" data-theme="night">
+  <div class="drawer" data-theme="dracula">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
