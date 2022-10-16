@@ -1,47 +1,49 @@
-<script setup>
-import { computed, ref } from "vue";
-import PostCard from "../components/PostCard.vue";
-const posts = ref(["Title1", "Title2", "Title3", "Title4", "Title5", "Title6"]);
-// Token 1a3e2b3b2a638dd5ffc748d271c02c3a8b2a1cc6a5f225227d027fdbef7c3547aa6e8b3760e9ebd47d9173f09493cb78412145436125085ed1968637c72b2a6a21fecbafab5df5e34f01390235a457402aceae52531c9cb9f193f3fe4d6c706d2df454063d6c8ddd95077912c8b5764b3e46c38bdc770aea88850883538cf47a
-
-</script>
-
 <template>
-  <main>
+  <main class="w-screen min-h-screen bg-base-100 lg:px-32">
     <header
-      class="min-h-[60vh] w-full bg-base-200 flex flex-col items-center justify-center"
+      class="min-h-[65vh] my-8 rounded-xl bg-neutral flex flex-row justify-center items-center"
     >
-      <div
-        class="w-full flex flex-col lg:flex-row items-center justify-around px-64"
-      >
-        <img
-          src="https://placeimg.com/600/400/arch"
-          alt=""
-          class="max-h-md max-w-xl rounded-lg"
-        />
-        <div class="max-w-xl h-md flex flex-col justify-around text-right">
-          <h1 class="text-4xl font-bold">This is a sample Blog post!</h1>
-          <p class="font-light text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-            soluta voluptate corrupti omnis quos accusantium non quia nisi
-            delectus excepturi....
-          </p>
-          <nuxt-link
-            class="btn btn-primary max-w-[150px] xl:ml-auto hover:shadow-md hover:shadow-primary"
-            to="/"
-            >Read Now!</nuxt-link
-          >
-        </div>
-      </div>
+      <h1 class="text-4xl font-extrabold text-white tracking-tight">
+        Welcome to my Blog
+      </h1>
     </header>
 
-    <section class="w-full px-32 py-16">
-      <h1 class="text-content text-3xl font-semibold">Blog Posts</h1>
-      <ul class="flex flex-col xl:flex-row  flex-wrap">
-        <PostCard v-for="post in posts" :title="post"/>
+    <section class="flex flex-col lg:flex-row px-40">
+      <div
+        class="min-h-[24rem] lg:w-1/2 bg-neutral p-6 rounded-xl my-8 lg:mr-4"
+      >
+        <h2 class="text-3xl text-white font-bold mb-4">About Me 👋</h2>
+        <p class="text-xl font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          quidem voluptates nihil incidunt iure repellat expedita perferendis
+          velit, pariatur a tempore, commodi hic recusandae doloribus in nobis
+          reiciendis asperiores vero.
+        </p>
+      </div>
+      <div class="my-8 flex flex-col justify-between lg:w-1/2 lg:ml-4">
+        <Article />
+        <div class="min-h-[12rem] w-full bg-neutral rounded-xl mt-4 p-4">
+          <div>
+            <h2 class="text-2xl text-white font-bold mb-4">Find Me On</h2>
+            <div>
+              <a href="#">Twitter</a>
+              <a href="#">Github</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
 
-       
-      </ul>
+          <span class="font-semibold">
+            Send me an email at 
+            <b>matissjurevics@gmail.com</b>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="px-40">
+        <h1 class="text-3xl font-bold text-white mt-4">Newest Posts</h1>
+        <div>
+            
+        </div>
     </section>
   </main>
 </template>

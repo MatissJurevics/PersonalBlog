@@ -3,7 +3,16 @@
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <div class="w-full navbar bg-base-300">
+      <div class="w-full navbar bg-neutral lg:px-72">
+        
+        <a href="/"><img src="../assets/Union.svg" alt="Logo" class="h-12"></a>
+        <div class="flex-none hidden lg:block">
+          <ul class="menu menu-horizontal">
+            <!-- Navbar menu content here -->
+            <li><a>Portfolio</a></li>
+            <li><a>Contact Me</a></li>
+          </ul>
+        </div>
         <div class="flex-none lg:hidden">
           <label for="my-drawer-3" class="btn btn-square btn-ghost">
             <svg
@@ -21,23 +30,16 @@
             </svg>
           </label>
         </div>
-        <div class="flex-1 px-2 mx-2 text-xl font-bold">Saetom Blog</div>
-        <div class="flex-none hidden lg:block">
-          <ul class="menu menu-horizontal">
-            <!-- Navbar menu content here -->
-            <li><a>Portfolio</a></li>
-            <li><a>Contact Me</a></li>
-          </ul>
-        </div>
       </div>
       <!-- Page content here -->
 
       <Nuxt />
-      <footer class="footer mt-auto footer-center p-4 bg-base-300 text-base-content">
+
+      <!-- <footer class="footer mt-auto footer-center p-4 bg-neutral text-base-content">
         <div>
           <p>Made by: Matiss Jurevics</p>
         </div>
-      </footer>
+      </footer> -->
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay"></label>
